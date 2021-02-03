@@ -1,35 +1,30 @@
 class UsersController < ApplicationController
 
     def index
-        # users = User.all 
-        # render json: users
-        # render plain: "Hammad$ Hammad$ Hammad$ Hammad$ Hammad$ Hammad$ Hammad$ "
-        render json: params
+        users = User.all 
+        render json: users
     end
 
     def show
-        render plain: "#{params}"
+        user = User.find(params[:id])
+        render json: user
     end
+
+    # def update
+    #     render json: params
+    # end
 
     def create
-        render json: params
+        user = User.new(user_params)
+        if user.save
+            render json: user
+        else
+            render json: user.errors.full_messages, status: 422
+        end
     end
 
-    def update
-        render json: params
+    def user_params
+        params.require(:user).permit(:name, :email)
     end
-
-    # def create
-    #     user = User.new(user_params)
-    #     if user.save
-    #         render json: user
-    #     else
-    #         render json: user.errors.full_messages, status: 418
-    #     end
-    # end
-
-    # def user_params
-    #     params #require().permit()
-    # end
 
 end
