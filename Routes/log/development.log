@@ -2,3 +2,539 @@
   ↳ bin/rails:9
   [1m[35m (277.2ms)[0m  [1m[35mCREATE DATABASE "Routes_test" ENCODING = 'unicode'[0m
   ↳ bin/rails:9
+Started GET "/" for ::1 at 2021-02-03 14:52:51 -0500
+
+ActiveRecord::NoDatabaseError - FATAL:  database "Routes_development" does not exist:
+
+Started POST "/__better_errors/e1ce99da16107d8f/variables" for ::1 at 2021-02-03 14:52:51 -0500
+  [1m[35m (169.7ms)[0m  [1m[35mCREATE DATABASE "Routes_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (83.8ms)[0m  [1m[35mCREATE DATABASE "Routes_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2021-02-03 14:57:21 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/hollyphillips/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/hollyphillips/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
+Completed 200 OK in 17ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-02-03 14:57:57 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/hollyphillips/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/hollyphillips/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 13ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-02-03 14:59:24 -0500
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/hollyphillips/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/hollyphillips/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb (1.8ms)
+Completed 200 OK in 97ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2021-02-03 15:00:01 -0500
+Processing by UsersController#index as */*
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+
+NameError - uninitialized constant UsersController::User:
+  app/controllers/users_controller.rb:4:in `index'
+
+Started GET "/" for ::1 at 2021-02-03 15:00:48 -0500
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/hollyphillips/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/hollyphillips/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb (1.3ms)
+Completed 200 OK in 98ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-02-03 15:01:20 -0500
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/hollyphillips/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/hollyphillips/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb (1.5ms)
+Completed 200 OK in 88ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2021-02-03 15:01:26 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+actionpack (5.2.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.4) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2021-02-03 15:01:29 -0500
+
+LoadError - Unable to autoload constant UsersController, expected /Users/hollyphillips/Desktop/AA_classwork/W6D3/Routes/app/controllers/users_controller.rb to define it:
+
+Started GET "/users" for ::1 at 2021-02-03 15:03:10 -0500
+Processing by UsersController#index as */*
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-02-03 15:03:37 -0500
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/hollyphillips/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/hollyphillips/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb (2.9ms)
+Completed 200 OK in 106ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2021-02-03 15:03:46 -0500
+Processing by UsersController#index as */*
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for ::1 at 2021-02-03 15:04:40 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+actionpack (5.2.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.4) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/blog" for ::1 at 2021-02-03 15:05:05 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/blog"):
+  
+actionpack (5.2.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.4) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/blogs" for ::1 at 2021-02-03 15:05:08 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/blogs"):
+  
+actionpack (5.2.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.4) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2021-02-03 15:06:04 -0500
+Processing by UsersController#index as */*
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/googley" for ::1 at 2021-02-03 15:08:49 -0500
+
+AbstractController::ActionNotFound - The action 'show' could not be found for UsersController:
+
+Started GET "/users?googley=%22yo%22" for ::1 at 2021-02-03 15:09:40 -0500
+Processing by UsersController#index as */*
+  Parameters: {"googley"=>"\"yo\""}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/googley" for ::1 at 2021-02-03 15:10:56 -0500
+
+AbstractController::ActionNotFound - The action 'show' could not be found for UsersController:
+
+Started GET "/users/googley" for ::1 at 2021-02-03 15:12:05 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"googley"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/googley" for ::1 at 2021-02-03 15:12:39 -0500
+Processing by UsersController#show as */*
+  Parameters: {"Hammad"=>"googley"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/googley/?heyyo=234" for ::1 at 2021-02-03 15:13:16 -0500
+Processing by UsersController#show as */*
+  Parameters: {"heyyo"=>"234", "Hammad"=>"googley"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/googley/?heyyo=234" for ::1 at 2021-02-03 15:14:59 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/googley"):
+  
+actionpack (5.2.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.4) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users/googley/?heyyo=234" for ::1 at 2021-02-03 15:15:24 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/googley"):
+  
+actionpack (5.2.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.4) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users/googley/?heyyo=234" for ::1 at 2021-02-03 15:15:26 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/googley"):
+  
+actionpack (5.2.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.4) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users/?heyyo=234" for ::1 at 2021-02-03 15:17:29 -0500
+Processing by UsersController#create as */*
+  Parameters: {"hotcha"=>"cha", "heyyo"=>"234"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/?heyyo=234" for ::1 at 2021-02-03 15:18:51 -0500
+Processing by UsersController#create as */*
+  Parameters: {"hotcha"=>"cha", "heyyo"=>"234"}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/?heyyo=234" for ::1 at 2021-02-03 15:19:36 -0500
+Processing by UsersController#create as */*
+  Parameters: {"hotcha"=>"cha", "heyyo"=>"234"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/?heyyo=234" for ::1 at 2021-02-03 15:20:37 -0500
+Processing by UsersController#create as */*
+  Parameters: {"hotcha"=>"cha", "heyyo"=>"234"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/users/goggfkg?heyyo=234" for ::1 at 2021-02-03 15:22:03 -0500
+Processing by UsersController#update as */*
+  Parameters: {"hotcha"=>"cha", "heyyo"=>"234", "id"=>"goggfkg"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/users/goggfkg/?heyyo=234" for ::1 at 2021-02-03 15:22:31 -0500
+Processing by UsersController#update as */*
+  Parameters: {"hotcha"=>"cha", "heyyo"=>"234", "id"=>"goggfkg"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/users/gog?heyyo=234" for ::1 at 2021-02-03 15:22:54 -0500
+Processing by UsersController#update as */*
+  Parameters: {"hotcha"=>"cha", "heyyo"=>"234", "id"=>"gog"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/users/goggfkg&%^%/?heyyo=234" for ::1 at 2021-02-03 15:23:03 -0500
+Processing by UsersController#update as */*
+  Parameters: {"hotcha"=>"cha", "heyyo"=>"234", "id"=>"goggfkg&%^%"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/users/goggfkg&%^%/?heyyo=234" for ::1 at 2021-02-03 15:23:19 -0500
+Processing by UsersController#update as */*
+  Parameters: {"hotcha"=>"cha", "heyyo"=>"234", "id"=>"goggfkg&%^%"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/users/Hammad/?Holly=true" for ::1 at 2021-02-03 15:23:32 -0500
+Processing by UsersController#update as */*
+  Parameters: {"hotcha"=>"cha", "Holly"=>"true", "id"=>"Hammad"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/users/Hammad/?Holly=true" for ::1 at 2021-02-03 15:25:57 -0500
+
+AbstractController::ActionNotFound - The action 'update' could not be found for UsersController:
+
+Started PUT "/users/Hammad/?Holly=true" for ::1 at 2021-02-03 15:26:15 -0500
+Processing by UsersController#update as */*
+  Parameters: {"hotcha"=>"cha", "Holly"=>"true", "id"=>"Hammad"}
+No template found for UsersController#update, rendering head :no_content
+Completed 204 No Content in 134ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users//?Holly=Hammad" for ::1 at 2021-02-03 15:27:35 -0500
+Processing by UsersController#create as */*
+  Parameters: {"hotcha"=>"cha", "Holly"=>"Hammad"}
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::MissingTemplate - Missing template users/create, application/create with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/hollyphillips/Desktop/AA_classwork/W6D3/Routes/app/views":
+  app/controllers/users_controller.rb:15:in `create'
+
+Started POST "/users//?Holly=Hammad" for ::1 at 2021-02-03 15:29:58 -0500
+Processing by UsersController#create as */*
+  Parameters: {"hotcha"=>"cha", "Holly"=>"Hammad"}
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 133ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users//?Holly=Hammad" for ::1 at 2021-02-03 15:31:56 -0500
+Processing by UsersController#create as */*
+  Parameters: {"hotcha"=>"cha", "Holly"=>"Hammad"}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users?some_category[a_key]=another+value&some_category[a_second_key]=yet+another+value%27" for ::1 at 2021-02-03 15:34:57 -0500
+Processing by UsersController#create as */*
+  Parameters: {"hotcha"=>"cha", "some_category"=>{"a_key"=>"another value", "a_second_key"=>"yet another value'"}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users?some_category[a_key]=another+value&some_category[a_second_key]=yet+another+value%27" for ::1 at 2021-02-03 15:35:01 -0500
+Processing by UsersController#create as */*
+  Parameters: {"some_category"=>{"a_key"=>"another value", "a_second_key"=>"yet another value'"}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users?dinosaur[a_key]=another+value&some_category[a_second_key]=yet+another+value%27" for ::1 at 2021-02-03 15:36:55 -0500
+Processing by UsersController#create as */*
+  Parameters: {"dinosaur"=>{"a_key"=>"another value"}, "some_category"=>{"a_second_key"=>"yet another value'"}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users?dinosaur=another+value&some_category[a_second_key]=yet+another+value%27" for ::1 at 2021-02-03 15:37:25 -0500
+Processing by UsersController#create as */*
+  Parameters: {"dinosaur"=>"another value", "some_category"=>{"a_second_key"=>"yet another value'"}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users?dinosaur[sgdg]=another+value&some_category[a_second_key]=yet+another+value%27" for ::1 at 2021-02-03 15:37:46 -0500
+Processing by UsersController#create as */*
+  Parameters: {"dinosaur"=>{"sgdg"=>"another value"}, "some_category"=>{"a_second_key"=>"yet another value'"}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users?dinosaur=another+value&some_category[a_second_key]=yet+another+value%27" for ::1 at 2021-02-03 15:42:06 -0500
+Processing by UsersController#create as */*
+  Parameters: {"dinosaur"=>"another value", "some_category"=>{"a_second_key"=>"yet another value'"}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users?dinosaur=another+value&some_category[a_second_key]=yet+another+value" for ::1 at 2021-02-03 15:43:41 -0500
+Processing by UsersController#create as */*
+  Parameters: {"dinosaur"=>"another value", "some_category"=>{"a_second_key"=>"yet another value"}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2021-02-03 15:45:37 -0500
+Processing by UsersController#create as */*
+  Parameters: {"dinosaur"=>"another value", "some_category"=>"{ \"a_second_key\" => \"yet another value\"}"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2021-02-03 15:46:12 -0500
+Processing by UsersController#create as */*
+  Parameters: {"dinosaur"=>"another value", "some_category"=>"\#{ \"a_second_key\" => \"yet another value\"}"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2021-02-03 15:46:23 -0500
+Processing by UsersController#create as */*
+  Parameters: {"dinosaur"=>"another value", "some_category"=>"\#{ {\"a_second_key\" => \"yet another value\"}}"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users?some_category={%22a_second_key%22%20=%3E%20%22yet%20another%20value%22}" for ::1 at 2021-02-03 15:47:15 -0500
+Processing by UsersController#create as */*
+  Parameters: {"dinosaur"=>"another value", "some_category"=>"{\"a_second_key\" => \"yet another value\"}"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users?some_category={%22a_second_key%22%20=%3E%20%22yet%20another%20value%22}" for ::1 at 2021-02-03 15:48:09 -0500
+Processing by UsersController#create as */*
+  Parameters: {"some_category"=>"{\"a_second_key\" => \"yet another value\"}"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2021-02-03 15:48:17 -0500
+Processing by UsersController#create as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2021-02-03 15:48:24 -0500
+Processing by UsersController#create as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2021-02-03 15:48:32 -0500
+Processing by UsersController#create as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
