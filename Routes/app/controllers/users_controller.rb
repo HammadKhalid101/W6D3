@@ -28,9 +28,6 @@ class UsersController < ApplicationController
     #     end
     # end
 
-    # def new
-    # end
-
     # def user_params
     #     params #require().permit()
     # end
