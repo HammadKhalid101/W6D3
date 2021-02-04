@@ -10,9 +10,14 @@ class UsersController < ApplicationController
         render json: user
     end
 
-    # def update
-    #     render json: params
-    # end
+    def update
+        user = User.find(params[:id])
+        if user.update(user_params)
+            redirect_to user_url(user)
+        else
+            render rson: user.errors.full_messages, status: :unprocessable_entity
+        end
+    end
 
     def create
         user = User.new(user_params)
@@ -21,6 +26,12 @@ class UsersController < ApplicationController
         else
             render json: user.errors.full_messages, status: 422
         end
+    end
+
+    def destroy
+        user = User.find(params[:id])
+        user.destroy
+        redirect_to users_url
     end
 
     def user_params
