@@ -6,9 +6,15 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-holly = User.create( name: 'Holly',  email: 'holly@routes.com')
-hammad = User.create( name: 'Hammad',  email: 'hammad@routes.com')
-rich = User.create( name: 'Rich',  email: 'rich@routes.com')
-justin = User.create( name: 'Justin',  email: 'justin@routes.com')
-val = User.create( name: 'Val',  email: 'val@routes.com')
-dane = User.create( name: 'Dane',  email: 'dane@routes.com')
+User.create( username: 'Holly')
+User.create( username: 'Hammad')
+User.create( username: 'Rich')
+User.create( username: 'Justin')
+User.create( username: 'Val')
+User.create( username: 'Dane')
+
+Artwork.create( title: "Holly's Artwork", image_url: "urllllll", artist_id: 1 )
+Artwork.create( title: "Holly's Artwork", image_url: "urllllll", artist_id: 2 )
+
+
+
