@@ -16,5 +16,7 @@ User.create( username: 'Dane')
 Artwork.create( title: "Holly's Artwork", image_url: "urllllll", artist_id: 1 )
 Artwork.create( title: "Holly's Artwork", image_url: "urllllll", artist_id: 2 )
 
+ArtworkShare.create(artwork_id: 1, viewer_id: 5)
+
 
 
